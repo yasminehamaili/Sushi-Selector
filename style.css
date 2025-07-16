@@ -1,0 +1,358 @@
+@font-face {
+    font-family: font1;
+    src: url(Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: titre1;
+    src: url(DK\ Sushi\ Bar.ttf);
+}
+@font-face {
+    font-family: titre2;
+    src: url(BROMPH_TOWN.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #fefefe;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/background.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 50%;
+    position: absolute;
+    top: 2vw;
+    right: 25vw;
+
+}
+ul a{
+    padding: 10px;
+    text-decoration: none;
+    color: #1f1931;
+    font-family: font1
+}
+.title{
+    align-self: end;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.title .big-title{
+    font-family: titre1;
+    font-size: 5rem;
+    color: #2f2d45;
+    text-align: center;
+    line-height: 40px;
+    padding-bottom: 15px;
+}
+.title .big-title span{
+    font-size: 10rem;
+    color: #e1543c;
+    letter-spacing: 15px;
+}
+.title .desc{
+    font-family: font1;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #1c1b31;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.title .btn{
+    width: 25%;
+    align-self: center;
+    background-color: #fff;
+    border: #1c1b31 solid 2px;
+    text-decoration: none;
+    font-family: titre1;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.btn-text{
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    color: #1c1b31;
+    text-align: center;
+}
+ul a:hover{
+    color: #fefefe;
+    background-image: url(images/brush\ touch.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center;
+}
+.title .btn:hover{
+    margin-left: 80px;
+    background-color: #fefefe;
+}
+.btn-text:hover{
+    font-size: 25px;
+    color: #2f2d45;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu {
+    color: #2f2d45;
+}
+#menu h1, #service h1, #about-us h1{
+    color: #2f2d45;
+    font-family: titre1;
+    font-size: 100px;
+    text-align: center;
+}
+#menu h2{
+    font-family: titre1;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 35px;
+}
+.sushi-types, .nigiri-types , .supp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sushi-types-img , .nigiri-types-img , .supp-img{
+    margin: 20px 20px 20px 20px;
+}
+#menu h3{
+    font-family: font1;
+}
+#menu img{
+    width: 35%;
+}
+#service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#service .own-sushi{
+    width: 225px;
+}
+#service h2{
+    color: #e1543c;
+    font-family: font1;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.ingrediens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px;
+    position: relative;
+}
+.ingrediens img{
+    width: 150px;
+    position: absolute;
+    transform-origin: center;
+}
+.ingrediens img:nth-child(1){
+    transform: rotate(0deg) translate(350px) rotate(0deg);
+}
+.ingrediens img:nth-child(2){
+    transform: rotate(90deg) translate(80px) rotate(90deg);
+}
+.ingrediens img:nth-child(3){
+    transform: rotate(184deg) translate(350px) rotate(220deg);
+}
+.ingrediens img:nth-child(4){
+    transform: rotate(216deg) translate(350px) rotate(-216deg);
+}
+.ingrediens img:nth-child(5){
+    transform: rotate(323deg) translate(390px) rotate(94deg);
+}
+#service p{
+    color: #2f2d45;
+    font-family: font1;
+    font-size: 20px;
+    margin-top: 160px;
+}
+#service a{
+    margin-top: 34px;
+    margin-bottom: 27px;
+    text-decoration: none;
+    color:#fefefe;
+    background-color: #e1543c;
+    font-family: font1;
+    font-size: 20px;
+    border-radius: 18px;
+    padding: 5px 15px;
+}
+#service a:hover{
+    font-size: 25px;
+    background-color: #2f2d45;
+}
+
+
+
+
+
+
+
+
+
+
+.order{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 100px;
+}
+.order .ready-to-order{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.order .ready-to-order .big-title {
+    font-family: titre1;
+    font-size:50px;
+    color: #e1543c;
+    text-align: center;
+}
+.order .ready-to-order .big-title img{
+    width: 60%;
+    height: 70%;
+    justify-content: center;
+}
+.order .ready-to-order p{
+    font-family: font1;
+    font-size: 20px;
+    color: #e1543c;
+    text-align: center;
+}
+.order .infos{
+    padding-top: 70px;
+}
+.order .case{
+    margin-top: 20px;
+    list-style: none;
+}
+.order .infos h2{
+    color: #2f2d45;
+    font-family: font1;
+    font-size: 20px;
+}
+.order .infos .case li{
+    font-family: font1;
+    font-size: 17px;
+    color: #2f2d45;
+}
+.order .infos .case input{
+    border-radius: 5px;
+    color: #2f2d45;
+    width: 200px;
+    font-family: font1;
+    text-indent: 5px;
+}
+.order .infos .case textarea{
+    border-radius: 5px;
+    color: #2f2d45;
+    font-family: font1;
+    text-indent: 5px;
+    border: #1c1b31 solid 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about-us p{
+    font-family: font1;
+    color: #2f2d45;
+    font-size: 25px;
+    text-align: center;
+    word-wrap: break-word;
+    width: 48%;
+}
+#about-us span{
+    font-family: titre1;
+    color: #e1543c;
+    font-size: 32px;
+}
+#about-us img{
+    margin-top: -100px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    color: #1c1b31;
+    background-image: url(images/japanese\ waves\ -\ Copy.png);
+    height: 20vh;
+    justify-content: space-around;
+}
+.contact{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+footer p{
+    background-color:transparent;
+    font-size:1.4rem ;
+    font-family: font1;
+
+
+}
+footer i{
+    color: #1c1b31;
+    background-color: transparent;
+    font-size: 1.7rem;
+}
+html{
+    scroll-behavior: smooth;
+}
